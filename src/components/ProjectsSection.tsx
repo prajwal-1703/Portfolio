@@ -113,7 +113,7 @@ const ProjectsSection = () => {
           className="text-center mt-12"
         >
           <a
-            href="https://github.com/Prajwal_1703"
+            href="https://github.com/Prajwal-1703"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 font-mono text-sm text-muted-foreground hover:text-accent transition-colors"
