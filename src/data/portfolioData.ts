@@ -107,7 +107,7 @@ export const socialLinks: SocialLink[] = [
 export const skills: Skill[] = [
   {
     category: "DevOps & Cloud",
-    items: ["Docker", "Kubernetes", "Jenkins", "Terraform", "AWS", "GitHub Actions", "Ansible"],
+    items: ["Docker", "Kubernetes", "Jenkins", "Terraform", "AWS", "GitHub Actions"],
   },
   {
     category: "Scripting & Code",
