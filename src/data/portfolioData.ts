@@ -88,8 +88,8 @@ export interface Education {
 
 export const personalInfo: PersonalInfo = {
   name: "Prajwal Athare",
-  tagline: "DevOps Engineer | Cybersecurity Enthusiast | Web3 Builder",
-  summary: "Aspiring DevOps Engineer with a strong foundation in Linux, Cloud Computing, and Automation. Technically curious and committed to ownership of outcomes in high-velocity engineering environments. Proficient in building reliable CI/CD pipelines, orchestrating microservices, and managing Infrastructure-as-Code (IaC). Eager to apply analytical skills to solve high-impact engineering problems.",
+  tagline: "DevOps & Cloud Engineer | AWS Automation | DevSecOps",
+  summary: "DevOps-focused Cloud Engineer skilled in AWS automation, cost optimization, and production-grade CI/CD pipelines. Experienced in building self-healing infrastructure, proactive monitoring systems, and DevSecOps workflows that improve reliability, security, and cloud efficiency.",
   email: "atharep1703@gmail.com",
   phone: "+91-9922047771",
   location: "Pune, Maharashtra, India",
@@ -107,66 +107,90 @@ export const socialLinks: SocialLink[] = [
 export const skills: Skill[] = [
   {
     category: "DevOps & Cloud",
-    items: ["Docker", "Kubernetes", "Jenkins", "Terraform", "AWS", "GitHub Actions", "Ansible"],
+    items: ["Docker", "Kubernetes", "Jenkins", "GitHub Actions", "Prometheus", "Grafana", "Nginx", "Tailscale", "Git", "GitHub"],
   },
   {
-    category: "Scripting & Code",
-    items: ["Python", "Shell Scripting", "Bash", "C++", "Node.js", "Solidity"],
+    category: "AWS Cloud Services",
+    items: ["EC2", "Lambda", "S3", "CloudWatch", "IAM", "VPC", "Route53"],
+  },
+  {
+    category: "Languages & Frameworks",
+    items: ["Python", "Node.js", "React.js", "Express.js", "Solidity", "C++", "Bash"],
   },
   {
     category: "Security Tools",
-    items: ["Burp Suite", "Nmap", "Wireshark", "Metasploit", "SonarQube", "Trivy", "OWASP ZAP"],
+    items: ["SonarQube", "Trivy", "OWASP ZAP", "Burp Suite", "Nmap", "Wireshark", "Metasploit"],
   },
   {
     category: "Databases & OS",
-    items: ["MySQL", "PostgreSQL", "MongoDB", "Linux", "Kali Linux", "Ubuntu", "Windows Server"],
+    items: ["MongoDB", "MySQL", "PostgreSQL", "Linux (Kali/Ubuntu)", "Windows Server"],
   },
 ];
 
 export const projects: Project[] = [
   {
+    title: "VizLab",
+    description: "Designed, built, and deployed a production-grade MERN application on a self-hosted Linux homelab server using Docker to visualize DevOps infrastructure dependencies across containerized and cloud-based systems. Implemented backend services to collect, parse, and correlate Docker and AWS metrics. Integrated Prometheus and Grafana for real-time metrics scraping and visualization.",
+    techStack: ["React", "Node.js", "Docker", "Prometheus", "Grafana", "AWS"],
+    liveUrl: "#", // Add live demo link if available
+    featured: true,
+    date: "Feb 2026",
+  },
+  {
+    title: "AWS Idle Instance Stopper",
+    description: "Engineered a serverless cost-optimization bot using AWS Lambda and CloudWatch to automatically detect and stop idle EC2 instances based on CPU utilization thresholds. Reduced non-production cloud compute costs by 40% by eliminating wasted runtime during off-hours.",
+    techStack: ["AWS Lambda", "CloudWatch", "Boto3", "Python"],
+    githubUrl: "https://github.com/Prajwal-1703",
+    featured: true,
+    date: "Feb 2026",
+  },
+  {
     title: "End-to-End DevSecOps Pipeline",
-    description: "Architected a self-hosted CI/CD pipeline for automated deployments using Jenkins and Docker, mirroring real-world production workflows. Integrated automated security gates (SonarQube, Trivy) to identify vulnerabilities early. Implemented GitOps principles to automatically update a Kubernetes cluster.",
-    techStack: ["Jenkins", "Kubernetes", "Docker", "SonarQube", "Trivy", "GitOps"],
+    description: "Implemented a production-grade DevSecOps CI/CD pipeline using Jenkins, Docker, Kubernetes, and SonarQube, enforcing automated security gates (SAST, DAST, image scanning) and reducing deployment risk.",
+    techStack: ["Jenkins", "Kubernetes", "Docker", "SonarQube", "Trivy"],
     githubUrl: "https://github.com/Prajwal-1703",
     featured: true,
     date: "Dec 2025",
   },
   {
-    title: "Private Cloud Backup Server",
-    description: "Deployed a self-hosted file synchronization system using Syncthing within Docker containers to automate real-time backups. Implemented Tailscale for secure, zero-trust mesh network, enabling encrypted data transfer across subnets.",
-    techStack: ["Docker", "Syncthing", "Tailscale", "Linux"],
-    githubUrl: "https://github.com/Prajwal-1703",
+    title: "Uptimely (SaaS Observability Platform)",
+    description: "Architected a multi-tenant SaaS observability platform using a scalable Node.js polling engine, self-service React dashboards, and automated email alerting to reduce Mean Time to Detection (MTTD) for user services.",
+    techStack: ["React", "Node.js", "MongoDB", "AWS"],
     featured: true,
-    date: "May 2025",
+    date: "Jan 2026",
   },
   {
-    title: "BlockSource: Code to Crypto",
-    description: "Built a decentralized application integrating GitHub OAuth, demonstrating strong backend API integration skills. Winner of the Blockchain Domain-Specific Prize at The Convene 25 (National Level).",
-    techStack: ["Web3", "Solidity", "MetaMask", "Next.js"],
+    title: "Private Cloud Backup Server",
+    description: "Maintained 99.9% connectivity on dynamic IPs via a self-healing mesh network, removing DNS dependencies. Deployed using Docker, Syncthing, and Tailscale on Linux.",
+    techStack: ["Docker", "Syncthing", "Tailscale", "Linux"],
     githubUrl: "https://github.com/Prajwal-1703",
-    featured: true,
-    date: "Jan 2025",
+    featured: false,
+    date: "May 2025",
   },
 ];
 
 export const experiences: Experience[] = [
   {
-    title: "Blockchain Project Intern (Mentorship)",
-    company: "DAppWorld",
+    title: "DevOps Trainee",
+    company: "Parabola9",
     location: "Pune, India",
-    startDate: "Jan 2025",
-    endDate: "Apr 2025",
+    startDate: "Feb 2026",
+    endDate: "Present",
     description: [
-      "Collaborated on the development of a DAO-based decentralized platform using Solidity and Next.js",
-      "Implemented Git workflows for version control and participated in rigorous code reviews",
-      "Assisted in the deployment and automated testing of smart contracts on Ethereum testnets",
+      "Designed and deployed an AWS-based intelligent cost optimization engine ('Idle Stopper') that analyzes multi-metric utilization data and automatically enforces shutdown policies - cutting non-production cloud spend by up to 40%.",
+      "Developed a proactive disk space monitoring system that triggers automated email alerts upon exceeding utilization thresholds, preventing storage-related service outages.",
     ],
-    techStack: ["Solidity", "Next.js", "Git", "Ethereum"],
+    techStack: ["Python", "AWS", "CloudWatch", "Lambda"],
   },
 ];
 
 export const achievements: Achievement[] = [
+  {
+    title: "AWS Certifications",
+    description: "Technical Professional, Cloud Economics, Containers on AWS, Migrating Workloads, Digital Sovereignty, ML & Generative AI",
+    date: "2026",
+    icon: "award",
+  },
   {
     title: "Winner - Blockchain Domain Prize",
     description: "The Convene 25, IEEE Pune Section & Sinhgad Institute",
@@ -178,18 +202,6 @@ export const achievements: Achievement[] = [
     description: "American Sign Language Detection project using MediaPipe & OpenCV",
     date: "2025",
     icon: "award",
-  },
-  {
-    title: "Learn Linux and Shell Scripting",
-    description: "Course Completed - From Basic To Advanced (Udemy)",
-    date: "2023",
-    icon: "certificate",
-  },
-  {
-    title: "Ethereum 101",
-    description: "Course Completed - Dapp-world",
-    date: "2025",
-    icon: "certificate",
   },
 ];
 
@@ -204,14 +216,14 @@ export const blogPosts: BlogPost[] = [
   //   date: "2025-01-15",
   // },
 
-   {
+  {
     title: "Build Your Own Private Cloud in 5 Minutes with Docker, Syncthing & Tailscale ☁️🔒",
     platform: "devto",
     url: "https://dev.to/prajwal_ee759ffa925a7429e/build-your-own-private-cloud-in-5-minutes-with-docker-syncthing-tailscale-d4b",
     description: "A beginner's guide to container orchestration",
     date: "2026-01-07",
   },
-  
+
 ];
 
 export const featuredPosts: FeaturedPost[] = [
@@ -225,7 +237,7 @@ export const featuredPosts: FeaturedPost[] = [
   //   engagement: "500+ reactions",
   // },
 
-   {
+  {
     platform: "linkedin",
     content: "Excited to share that I won the Blockchain Domain Prize at The Convene 25!",
     url: "https://www.linkedin.com/posts/prajwal-athare-a4074628a_blockchain-web3-dapp-activity-7318930128883924992-9m1-?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEY7plABxRlmqTvC8yWceynoBkEnGEtnpyQ",
@@ -237,7 +249,7 @@ export const featuredPosts: FeaturedPost[] = [
 export const education: Education = {
   institution: "International Institute of Information Technology",
   degree: "Bachelor of Engineering",
-  field: "Computer Engineering",
+  field: "Computer Engineering (CGPA: 9.268)",
   location: "Pune, Maharashtra",
   graduationDate: "Expected May 2027",
 };
