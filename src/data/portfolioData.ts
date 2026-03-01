@@ -132,7 +132,7 @@ export const projects: Project[] = [
     title: "VizLab",
     description: "Designed, built, and deployed a production-grade MERN application on a self-hosted Linux homelab server using Docker to visualize DevOps infrastructure dependencies across containerized and cloud-based systems. Implemented backend services to collect, parse, and correlate Docker and AWS metrics. Integrated Prometheus and Grafana for real-time metrics scraping and visualization.",
     techStack: ["React", "Node.js", "Docker", "Prometheus", "Grafana", "AWS"],
-    liveUrl: "https://vizlab.athare.tech", // Example URL, replace with actual if different
+    liveUrl: "https://vizlab.xyz", // Example URL, replace with actual if different
     featured: true,
     date: "Feb 2026",
   },
@@ -140,7 +140,7 @@ export const projects: Project[] = [
     title: "AWS Idle Instance Stopper",
     description: "Engineered a serverless cost-optimization bot using AWS Lambda and CloudWatch to automatically detect and stop idle EC2 instances based on CPU utilization thresholds. Reduced non-production cloud compute costs by 40% by eliminating wasted runtime during off-hours.",
     techStack: ["AWS Lambda", "CloudWatch", "Boto3", "Python"],
-    githubUrl: "https://github.com/Prajwal-1703/AWS-Idle-Instance-Stopper",
+    githubUrl: "https://github.com/Prajwal-1703",
     featured: true,
     date: "Feb 2026",
   },
@@ -148,7 +148,7 @@ export const projects: Project[] = [
     title: "End-to-End DevSecOps Pipeline",
     description: "Implemented a production-grade DevSecOps CI/CD pipeline using Jenkins, Docker, Kubernetes, and SonarQube, enforcing automated security gates (SAST, DAST, image scanning) and reducing deployment risk.",
     techStack: ["Jenkins", "Kubernetes", "Docker", "SonarQube", "Trivy"],
-    githubUrl: "https://github.com/Prajwal-1703/DevSecOps-Pipeline",
+    githubUrl: "https://github.com/Prajwal-1703",
     featured: true,
     date: "Dec 2025",
   },
